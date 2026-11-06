@@ -30,9 +30,9 @@ There are two frontend endpoints:
 ## Database via docker
 ```sh
 # the root pw is set in docker-compose.yml
-docker-compose up -d mysql
-docker-compose exec mysql bash -c 'mysql --default-character-set=utf8 -p < schema.sql'
-docker-compose exec mysql bash -c "echo 'SET PASSWORD FOR \"ersti-we\" = PASSWORD(\"test\")' | mysql -p"
+docker compose up -d mysql
+docker compose exec mysql bash -c 'mysql --default-character-set=utf8 -p < schema.sql'
+docker compose exec mysql bash -c "echo 'SET PASSWORD FOR \"ersti-we\" = PASSWORD(\"test\")' | mysql -p"
 ```
 
 ## run as service
